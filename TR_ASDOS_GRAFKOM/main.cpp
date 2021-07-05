@@ -181,12 +181,28 @@ void tampil(void)
     glVertex3f(300.0, 50.0, 300.0);
     glEnd();
 
-    glBegin(GL_QUADS); //tembok depan
+    glBegin(GL_QUADS); //tembok dalam lantai 1
     glColor3ub(255, 200, 155);
     glVertex3f(-50.0, 50.0, 30.0); //PANJANG,Y,X
     glVertex3f(-50.0, -24.0, 30.0);
     glVertex3f(-50.0,-24.0, 300.0);
     glVertex3f(-50.0, 50.0, 300.0);
+    glEnd();
+
+    glBegin(GL_QUADS); //TEMBOK DEPAN 1
+    glColor3ub(255, 200, 155);
+    glVertex3f(300.0, -24.0, 30.0);
+    glVertex3f(-150.0, -24.0, 30.0);
+    glVertex3f(-150.0, 50.0,30.0);
+    glVertex3f(300.0, 50.0, 30.0);
+    glEnd();
+
+    glBegin(GL_QUADS); //TEMBOK BELAKANG 1
+    glColor3ub(255, 200, 155);
+    glVertex3f(300.0, -24.0, 300.0);
+    glVertex3f(-150.0, -24.0, 300.0);
+    glVertex3f(-150.0, 50.0, 300.0);
+    glVertex3f(300.0, 50.0, 300.0);
     glEnd();
 
     glBegin(GL_QUADS);//ALAS TANAH
@@ -203,6 +219,22 @@ void tampil(void)
     glVertex3f(-150.0, 200.0, 30.0);
     glVertex3f(-150.0, 200.0, 300.0);
     glVertex3f(300.0, 200.0, 300.0);
+    glEnd();
+
+    glBegin(GL_QUADS); //TEMBOK KIRI 2
+    glColor3ub(220, 232, 232);
+    glVertex3f(300.0, 200.0, 30.0); //PANJANG,Y,X
+    glVertex3f(300.0, 50.0, 30.0);
+    glVertex3f(300.0, 50.0, 300.0);
+    glVertex3f(300.0, 200.0, 300.0);
+    glEnd();
+
+    glBegin(GL_QUADS); //TEMBOK KANAN 2
+    glColor3ub(220, 232, 232);
+    glVertex3f(-150.0, 200.0, 30.0); //PANJANG,Y,X
+    glVertex3f(-150.0, 50.0, 30.0);
+    glVertex3f(-150.0, 50.0, 300.0);
+    glVertex3f(-150.0, 200.0, 300.0);
     glEnd();
 
     glBegin(GL_QUADS); //TEMBOK Belakang Lantai2
@@ -397,7 +429,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(800, 600);
     glutInitWindowPosition(250, 250);
-    glutCreateWindow("Patrick Dennas Aran-672019071");
+    glutCreateWindow("TR_ASDOS_GRAFKOM_F");
     init();
     glutDisplayFunc(tampil);
     glutKeyboardFunc(keyboard);
