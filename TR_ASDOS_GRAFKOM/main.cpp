@@ -818,6 +818,7 @@ void tampil(void)
     jendela(100, -6, 30);
     jendela(130, -6, 30);
     jendela(160, -6, 30);
+
     jendela(10, 37, 30);//lantai2
     jendela(-20, 37, 30);
     jendela(-50, 37, 30);
@@ -827,6 +828,7 @@ void tampil(void)
     jendela(100, 37, 30);
     jendela(130, 37, 30);
     jendela(160, 37, 30);
+
     jendela(10, 70, 30);//lantai3
     jendela(-20, 70, 30);
     jendela(-50, 70, 30);
@@ -836,6 +838,7 @@ void tampil(void)
     jendela(100, 70, 30);
     jendela(130, 70, 30);
     jendela(160, 70, 30);
+
     jendela(10, 105, 30);//lantai4
     jendela(-20, 105, 30);
     jendela(-50, 105, 30);
@@ -845,7 +848,62 @@ void tampil(void)
     jendela(100, 105, 30);
     jendela(130, 105, 30);
     jendela(160, 105, 30);
-    kursi(50,-15,35);
+
+    kursi(-100,-16,35);//lantai1baris1
+    kursi(-60,-16,35);
+    kursi(0,-16,35);
+    kursi(50,-16,35);
+    kursi(100,-16,35);
+    kursi(150,-16,35);
+
+    kursi(-100,-16,70);//lantai1baris2
+    kursi(-60,-16,70);
+    kursi(0,-16,70);
+    kursi(50,-16,70);
+    kursi(100,-16,70);
+    kursi(150,-16,70);
+
+    kursi(-100,-16,105);//lantai1baris3
+    kursi(-60,-16,105);
+    kursi(0,-16,105);
+    kursi(50,-16,105);
+    kursi(100,-16,105);
+    kursi(150,-16,105);
+
+    kursi(-100,-16,140);//lantai1baris4
+    kursi(-60,-16,140);
+    kursi(0,-16,140);
+    kursi(50,-16,140);
+    kursi(100,-16,140);
+    kursi(150,-16,140);
+
+    kursi(-100,34,35);//lantai2baris1
+    kursi(-60,34,35);
+    kursi(0,34,35);
+    kursi(50,34,35);
+    kursi(100,34,35);
+    kursi(150,34,35);
+
+    kursi(-100,34,70);//lantai2baris2
+    kursi(-60,34,70);
+    kursi(0,34,70);
+    kursi(50,34,70);
+    kursi(100,34,70);
+    kursi(150,34,70);
+
+    kursi(-100,34,105);//lantai2baris3
+    kursi(-60,34,105);
+    kursi(0,34,105);
+    kursi(50,34,105);
+    kursi(100,34,105);
+    kursi(150,34,105);
+
+    kursi(-100,34,140);//lantai2baris4
+    kursi(-60,34,140);
+    kursi(0,-16,140);
+    kursi(50,34,140);
+    kursi(100,34,140);
+    kursi(150,34,140);
     glPopMatrix();
     glutSwapBuffers();
 }
