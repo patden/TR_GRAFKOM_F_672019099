@@ -435,6 +435,12 @@ void building() {
     glVertex3f(225.0, 280.0, 25.5);
     glVertex3f(305.0, 280.0, 25.5);
 
+    glColor3ub(209, 197, 163);//// PUCUK KOTAK SITIK belakang
+    glVertex3f(305.0, 260.0, 105.0);
+    glVertex3f(225.0, 260.0, 105.0);
+    glVertex3f(225.0, 280.0, 105.0);
+    glVertex3f(305.0, 280.0, 105.0);
+
     glColor3ub(209, 197, 163);// PUCUK KOTAK SITIK KANAN
     glVertex3f(225.0, 260.0, 105.0);
     glVertex3f(225.0, 260.0, 25.0);
@@ -530,7 +536,7 @@ void building() {
     glVertex3f(-75.0, 260.0, 105.0);
     glVertex3f(-155.0, 260.0, 105.0);
 
-    glColor3ub(35, 130, 48);//kotak Atap kiri -belkang
+    glColor3ub(209, 118, 118);//kotak Atap kanan -belkang
     glVertex3f(-150.0, 260.0, 100.0);
     glVertex3f(-80.0, 260.0, 100.0);
     glVertex3f(-80.0, 200.0, 100.0);
@@ -548,12 +554,20 @@ void building() {
     glVertex3f(-75.0, 280.0, 25.0);
     glVertex3f(-75.0, 280.0, 105.0);
 
-    glColor3ub(2209, 197, 163);//// PUCUK KOTAK SITIK KIRI
+    glColor3ub(209, 197, 163);//// PUCUK KOTAK SITIK KIRI
     glVertex3f(-155.0, 260.0, 105.0);
     glVertex3f(-155.0, 260.0, 25.0);
     glVertex3f(-155.0, 280.0, 25.0);
     glVertex3f(-155.0, 280.0, 105.0);
+
+    glColor3ub(209, 197, 163);//// PUCUK KOTAK SITIK belakang
+    glVertex3f(-155.0, 260.0, 105.0);
+    glVertex3f(-75.0, 260.0, 105.0);
+    glVertex3f(-75.0, 280.0, 105.0);
+    glVertex3f(-155.0, 280.0, 105.0);
+
     glEnd();
+
 }
 
 void kursi(int h, int j, int g) {
