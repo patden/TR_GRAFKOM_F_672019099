@@ -808,29 +808,44 @@ void tampil(void)
         glClear(GL_COLOR_BUFFER_BIT);
     }
     building();
-    glScalef(2.0f, 2.0f, 1.0f);
-    pintu(30,-6,30);
-    jendela(0, -6, 30);//lantai1
-    jendela(-30, -6, 30);
-    jendela(-60, -6, 30);
-    jendela(60, -6, 30);
-    jendela(90, -6, 30);
-    jendela(120, -6, 30);
-    jendela(0, 30, 30);//lantai2
-    jendela(-30, 30, 30);
-    jendela(-60, 30, 30);
-    jendela(30,30,30);
-    jendela(60, 30, 30);
-    jendela(90, 30, 30);
-    jendela(120, 30, 30);
-    jendela(0, 70, 30);//lantai3
-    jendela(-30, 70, 30);
-    jendela(-60, 70, 30);
-    jendela(30,70,30);
-    jendela(60, 70, 30);
-    jendela(90, 70, 30);
-    jendela(120, 70, 30);
-    kursi(1,15,1);
+    glScalef(1.5f, 1.5f, 1.0f);
+    pintu(40,-10,30);
+    jendela(10, -6, 30);//lantai1
+    jendela(-20, -6, 30);
+    jendela(-50, -6, 30);
+    jendela(-80, -6, 30);
+    jendela(70, -6, 30);
+    jendela(100, -6, 30);
+    jendela(130, -6, 30);
+    jendela(160, -6, 30);
+    jendela(10, 37, 30);//lantai2
+    jendela(-20, 37, 30);
+    jendela(-50, 37, 30);
+    jendela(-80, 37, 30);
+    jendela(40,37,30);
+    jendela(70, 37, 30);
+    jendela(100, 37, 30);
+    jendela(130, 37, 30);
+    jendela(160, 37, 30);
+    jendela(10, 70, 30);//lantai3
+    jendela(-20, 70, 30);
+    jendela(-50, 70, 30);
+    jendela(-80, 70, 30);
+    jendela(40,70,30);
+    jendela(70, 70, 30);
+    jendela(100, 70, 30);
+    jendela(130, 70, 30);
+    jendela(160, 70, 30);
+    jendela(10, 105, 30);//lantai4
+    jendela(-20, 105, 30);
+    jendela(-50, 105, 30);
+    jendela(-80, 105, 30);
+    jendela(40,105,30);
+    jendela(70, 105, 30);
+    jendela(100, 105, 30);
+    jendela(130, 105, 30);
+    jendela(160, 105, 30);
+    kursi(50,-15,35);
     glPopMatrix();
     glutSwapBuffers();
 }
